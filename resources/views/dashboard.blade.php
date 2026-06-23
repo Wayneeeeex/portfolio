@@ -123,8 +123,8 @@
                         🚀
                     </div>
                     <div class="p-8">
-                        <h3 class="font-bold text-2xl mb-3 text-emerald-400">Project Title One</h3>
-                        <p class="text-zinc-600 dark:text-zinc-400 mb-6">Short description of the project and what problem it solves.</p>
+                        <h3 class="font-bold text-2xl mb-3 text-emerald-400">Inventory Management System </h3>
+                        <p class="text-zinc-600 dark:text-zinc-400 mb-6">It is a simple web application that has its own database online. To add, deduct, and remove stocks.</p>
                         <div class="flex gap-2 flex-wrap mb-6">
                             <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">Laravel</span>
                             <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">Tailwind</span>
@@ -141,7 +141,7 @@
                         💼
                     </div>
                     <div class="p-8">
-                        <h3 class="font-bold text-2xl mb-3 text-emerald-400">Project Title Two</h3>
+                        <h3 class="font-bold text-2xl mb-3 text-emerald-400">Point of Sales System (1st year Project)</h3>
                         <p class="text-zinc-600 dark:text-zinc-400 mb-6">Short description of the project and what problem it solves.</p>
                         <div class="flex gap-2 flex-wrap mb-6">
                             <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">Laravel</span>

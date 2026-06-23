@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-import './bootstrap';
-import '@fortawesome/fontawesome-free/css/all.min.css'; // Add this line
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
