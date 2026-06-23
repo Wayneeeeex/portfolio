@@ -2,11 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 
-// This forces your dashboard to load right away on the homepage
+// Temporarily return a raw string instead of the view
 Route::get('/', function () {
-    return view('dashboard');   
+    return 'LARAVEL IS ROUTING PERFECTLY!'; 
 });
 
+// ... rest of your routes
 // Temporarily comment out or remove the auth check to see if it loads on Vercel
 Route::get('/dashboard', function () {
     return view('dashboard');
