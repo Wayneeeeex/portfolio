@@ -118,11 +118,11 @@
         <div class="w-full px-6">
             <h2 class="text-5xl font-bold mb-12 text-center text-emerald-400">Featured Projects</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white dark:bg-zinc-900 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition">
-                    <div class="h-64 bg-zinc-300 dark:bg-zinc-700 flex items-center justify-center text-6xl">
-                        🚀
-                    </div>
-                    <div class="p-8">
+                <div class="h-64 bg-zinc-300 dark:bg-zinc-700 flex items-center justify-center">
+  <img src="{{ asset('img/invent.jpg') }}"
+       alt="Your Image Description"
+       class="w-full h-full object-contain border border-zinc-300 dark:border-zinc-600 rounded-3xl shadow-xl">
+</div>
                         <h3 class="font-bold text-2xl mb-3 text-emerald-400">Inventory Management System </h3>
                         <p class="text-zinc-600 dark:text-zinc-400 mb-6">It is a simple web application that has its own database online. To add, deduct, and remove stocks.</p>
                         <div class="flex gap-2 flex-wrap mb-6">
