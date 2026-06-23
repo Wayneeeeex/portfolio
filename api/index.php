@@ -22,14 +22,14 @@ foreach ($paths as $path) {
     }
 }
 
-// 3. Absolute path patch for serverless container mappings
+// 3. Setup the Composer Autoloader
 require __DIR__ . '/../vendor/autoload.php';
-require_once __DIR__ . '/../bootstrap/app.php';
 
-// 4. Handle request execution manually to bypass standard public directory locks
-$app = require_once __DIR__ . '/../bootstrap/app.php';
+// 4. Boot the Laravel Application Kernel cleanly (Loaded ONLY once)
+$app = require __DIR__ . '/../bootstrap/app.php';
 $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 
+// 5. Handle the incoming request lifecycle
 $response = $kernel->handle(
     $request = Illuminate\Http\Request::capture()
 );
