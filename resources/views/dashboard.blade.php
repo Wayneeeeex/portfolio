@@ -117,10 +117,12 @@
     <section id="projects" class="py-24 bg-zinc-100 dark:bg-zinc-950">
         <div class="w-full px-6">
             <h2 class="text-5xl font-bold mb-12 text-center text-emerald-400">Featured Projects</h2>
-           <div class="h-64 bg-zinc-300 dark:bg-zinc-700 flex items-center justify-center">
-  <img src="{{ asset('img/invent.jpg') }}"
-       alt="Your Image Description"
-       class="w-full h-full object-contain border border-zinc-300 dark:border-zinc-600 rounded-3xl shadow-xl">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-zinc-900 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="h-64 bg-zinc-300 dark:bg-zinc-700 flex items-center justify-center">
+    <img src="{{ asset('img/inventory-system.jpg') }}"
+         alt="Inventory Management System"
+         class="w-full h-full object-cover">
 </div>
                     <div class="p-8">
                         <h3 class="font-bold text-2xl mb-3 text-emerald-400">Inventory Management System </h3>
@@ -140,7 +142,7 @@
                     <div class="h-64 bg-zinc-300 dark:bg-zinc-700 flex items-center justify-center">
   <img src="{{ asset('img/POS-NETBEANS.png') }}"
        alt="Your Image Description"
-       class="w-full h-full object-contain border border-zinc-300 dark:border-zinc-600 rounded-3xl shadow-xl">
+       class="w-full h-full object-cover">
 </div>
                     <div class="p-8">
                         <h3 class="font-bold text-2xl mb-3 text-emerald-400">Point of Sales System (1st year Project)</h3>
