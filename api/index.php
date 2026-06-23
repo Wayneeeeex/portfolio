@@ -1,13 +1,14 @@
 <?php
 
-// 1. Force error visibility
+// 1. Force absolute on-screen raw error rendering
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// 2. Set absolute serverless paths
+// 2. Set absolute serverless storage paths
 $_ENV['APP_STORAGE'] = '/tmp/storage';
 $_ENV['VIEW_COMPILED_PATH'] = '/tmp/storage/framework/views';
+$_ENV['APP_DEBUG'] = 'true'; // Force Laravel debug mode on
 
 $paths = [
     '/tmp/storage/framework/views',
@@ -22,30 +23,32 @@ foreach ($paths as $path) {
     }
 }
 
-// 3. Autoloader
+// 3. Include Autoloader
 require __DIR__ . '/../vendor/autoload.php';
 
-// 4. Clean Boot
+// 4. Boot App
 $app = require __DIR__ . '/../bootstrap/app.php';
 
-// 5. Hot-fix: Explicitly register View factory paths for serverless isolation
-$app->singleton('view', function ($app) {
-    $factory = new \Illuminate\View\Factory(
-        $app['view.engine.resolver'],
-        $app['view.finder'],
-        $app['events']
-    );
-    $factory->setContainer($app);
-    $factory->share('app', $app);
-    return $factory;
+// 5. Force View Locations
+$app->afterResolving('view', function ($view) {
+    $view->addLocation(realpath(__DIR__ . '/../resources/views'));
 });
 
-// 6. Handle Request Lifecycle
-$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
+$app->bind('view.compiled', function () {
+    return '/tmp/storage/framework/views';
+});
 
-$response = $kernel->handle(
-    $request = Illuminate\Http\Request::capture()
-);
-
-$response->send();
-$kernel->terminate($request, $response);
+// 6. Run Kernel safely with raw try-catch wrapper
+try {
+    $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
+    $response = $kernel->handle(
+        $request = Illuminate\Http\Request::capture()
+    );
+    $response->send();
+    $kernel->terminate($request, $response);
+} catch (\Throwable $e) {
+    echo '<h1>Captured Boot Error:</h1>';
+    echo '<p><b>Message:</b> ' . $e->getMessage() . '</p>';
+    echo '<p><b>File:</b> ' . $e->getFile() . ' on line ' . $e->getLine() . '</p>';
+    echo '<pre>' . $e->getTraceAsString() . '</pre>';
+}
