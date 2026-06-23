@@ -138,14 +138,15 @@
 
                 <div class="bg-white dark:bg-zinc-900 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition">
                     <div class="h-64 bg-zinc-300 dark:bg-zinc-700 flex items-center justify-center text-6xl">
-                        💼
+                    <img src="{{ asset('img/POS-NETBEANS.png') }}" alt="Your Image Description" class="w-80 h-80 border border-zinc-300 dark:border-zinc-600 rounded-3xl object-cover shadow-xl">
+
                     </div>
                     <div class="p-8">
                         <h3 class="font-bold text-2xl mb-3 text-emerald-400">Point of Sales System (1st year Project)</h3>
-                        <p class="text-zinc-600 dark:text-zinc-400 mb-6">Short description of the project and what problem it solves.</p>
+                        <p class="text-zinc-600 dark:text-zinc-400 mb-6">A simple point of sales system made in Apache Netbeans (java).</p>
                         <div class="flex gap-2 flex-wrap mb-6">
-                            <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">Laravel</span>
-                            <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">Vue</span>
+                            <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">Java</span>
+                            <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">Netbean</span>
                         </div>
                         <div class="flex gap-6 text-emerald-600 font-medium">
                             <a href="#" class="hover:underline">Live Demo →</a>
