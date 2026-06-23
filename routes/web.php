@@ -2,14 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
+// This forces your dashboard to load right away on the homepage
 Route::get('/', function () {
-    return view('dashboard');   // This makes your portfolio the homepage
+    return view('dashboard');   
 });
 
-Route::middleware(['auth'])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
+// Temporarily comment out or remove the auth check to see if it loads on Vercel
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
 
 require __DIR__.'/auth.php';
