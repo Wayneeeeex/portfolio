@@ -97,22 +97,24 @@
 
 
 
-    <section id="experience" class="py-24 bg-white dark:bg-zinc-900">
-        <div class="w-full px-6">
-            <h2 class="text-5xl font-bold mb-12 text-center text-emerald-400">Experience</h2>
-            <div class="max-w-3xl mx-auto space-y-12">
-                <div class="flex flex-col md:flex-row gap-8">
-                    <div class="md:w-1/3">
-                        <h3 class="font-semibold text-xl text-emerald-400">Full Stack Developer</h3>
-                        <p class="text-white">Company Name • 2023 - Present</p>
-                    </div>
-                    <div class="md:w-2/3">
-                        <p class="text-zinc-600 dark:text-zinc-400">Write your achievements and responsibilities here...</p>
-                    </div>
+<section id="experience" class="py-24 bg-white dark:bg-zinc-900">
+    <div class="w-full px-6">
+        <h2 class="text-5xl font-bold mb-12 text-center text-emerald-400">Experience</h2>
+        <div class="max-w-3xl mx-auto space-y-12">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/3">
+                    <h3 class="font-semibold text-xl text-emerald-400">BSIT-IS Student</h3>
+                    <p class="text-white">2023 - Present</p>
+                </div>
+                <div class="md:w-2/3">
+                    <p class="text-zinc-600 dark:text-zinc-400">
+                        Participated in software development and networking projects as a Project Manager, Backend Developer, and QA Tester. Experienced in Laravel, MySQL, Tailwind CSS, and network configuration using eNSP.
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="projects" class="py-24 bg-zinc-100 dark:bg-zinc-950">
         <div class="w-full px-6">
@@ -120,13 +122,13 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white dark:bg-zinc-900 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition">
                     <div class="h-64 bg-zinc-300 dark:bg-zinc-700 flex items-center justify-center">
-    <img src="{{ asset('img/inventory-system.jpg') }}"
+    <img src="{{ asset('img/invent.jpg') }}"
          alt="Inventory Management System"
          class="w-full h-full object-cover">
 </div>
                     <div class="p-8">
                         <h3 class="font-bold text-2xl mb-3 text-emerald-400">Inventory Management System </h3>
-                        <p class="text-zinc-600 dark:text-zinc-400 mb-6">It is a simple web application that has its own database online. To add, deduct, and remove stocks.</p>
+                        <p class="text-zinc-600 dark:text-zinc-400 mb-6">It is a full stack projects that is for an inventory management system.</p>
                         <div class="flex gap-2 flex-wrap mb-6">
                             <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">Laravel</span>
                             <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">Tailwind</span>
@@ -164,7 +166,7 @@
     <section id="contact" class="py-24 bg-white dark:bg-zinc-900">
         <div class="max-w-2xl mx-auto px-6 text-center">
             <h2 class="text-5xl font-bold mb-8 text-emerald-400s">Get In Touch</h2>
-            <p class="text-xl text-zinc-600 dark:text-zinc-400 mb-10">I'm currently open to new opportunities and collaborations.</p>
+            <p class="text-xl text-white-600 dark:text-zinc-400 mb-10">I'm currently open to new opportunities and collaborations.</p>
             <a href="mailto:your@email.com" 
                class="inline-block px-12 py-5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-lg rounded-3xl transition">
                 Say Hello ✉️
