@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../js"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../app/Http/Controllers"
+		},
+		{
+			"path": "../../routes"
+		}
+	],
+	"settings": {}
+}
