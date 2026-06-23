@@ -1,19 +1,26 @@
 <?php
 
-// Force error reporting on for debugging
+// Enable error tracing
 ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// Tell Laravel to use Vercel's writable storage space
+// Re-route core operational caches to Vercel's temporary directory
 $_ENV['APP_STORAGE'] = '/tmp/storage';
 $_ENV['VIEW_COMPILED_PATH'] = '/tmp/storage/framework/views';
 
-// Ensure the temporary directory structures exist before Laravel runs
-if (!is_dir('/tmp/storage/framework/views')) {
-    mkdir('/tmp/storage/framework/views', 0755, true);
-}
-if (!is_dir('/tmp/storage/framework/sessions')) {
-    mkdir('/tmp/storage/framework/sessions', 0755, true);
+$required_paths = [
+    '/tmp/storage/framework/views',
+    '/tmp/storage/framework/sessions',
+    '/tmp/storage/framework/cache/data',
+    '/tmp/storage/bootstrap/cache'
+];
+
+foreach ($required_paths as $path) {
+    if (!is_dir($path)) {
+        mkdir($path, 0755, true);
+    }
 }
 
+// Bind Vercel execution environment 
 require __DIR__ . '/../public/index.php';
