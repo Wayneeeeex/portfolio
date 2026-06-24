@@ -119,55 +119,167 @@
     <section id="projects" class="py-24 bg-zinc-100 dark:bg-zinc-950">
         <div class="w-full px-6">
             <h2 class="text-5xl font-bold mb-12 text-center text-emerald-400">Featured Projects</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white dark:bg-zinc-900 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition">
-                    <div class="h-64 bg-zinc-300 dark:bg-zinc-700 flex items-center justify-center">
-    <img src="{{ asset('img/invent.jpg') }}"
-         alt="Inventory Management System"
-         class="w-full h-full object-cover">
-</div>
-                    <div class="p-8">
-                        <h3 class="font-bold text-2xl mb-3 text-emerald-400">Inventory Management System </h3>
-                        <p class="text-zinc-600 dark:text-zinc-400 mb-6">It is a full stack projects that is for an inventory management system.</p>
-                        <div class="flex gap-2 flex-wrap mb-6">
-                            <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">Laravel</span>
-                            <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">Tailwind</span>
-                        </div>
-                        <div class="flex gap-6 text-emerald-600 font-medium">
-                            <a href="#" class="hover:underline">Live Demo →</a>
-                            <a href="#" class="hover:underline">GitHub</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="flex gap-8 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide">
 
-                <div class="bg-white dark:bg-zinc-900 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition">
-                    <div class="h-64 bg-zinc-300 dark:bg-zinc-700 flex items-center justify-center">
-  <img src="{{ asset('img/POS-NETBEANS.png') }}"
-       alt="Your Image Description"
-       class="w-full h-full object-cover">
-</div>
-                    <div class="p-8">
-                        <h3 class="font-bold text-2xl mb-3 text-emerald-400">Point of Sales System (1st year Project)</h3>
-                        <p class="text-zinc-600 dark:text-zinc-400 mb-6">A simple point of sales system made in Apache Netbeans (java).</p>
-                        <div class="flex gap-2 flex-wrap mb-6">
-                            <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">Java</span>
-                            <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">Netbean</span>
-                        </div>
-                        <div class="flex gap-6 text-emerald-600 font-medium">
-                            <a href="#" class="hover:underline">Live Demo →</a>
-                            <a href="#" class="hover:underline">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+   <!-- Inventory Management System -->
+<div class="min-w-[350px] max-w-[350px] bg-white dark:bg-zinc-900 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition snap-start flex flex-col">
+
+    <div class="h-64 bg-zinc-300 dark:bg-zinc-700 flex items-center justify-center">
+        <img src="{{ asset('img/invent.jpg') }}"
+             alt="Inventory Management System"
+             class="w-full h-full object-cover">
+    </div>
+
+    <div class="p-8 flex flex-col flex-grow">
+
+        <h3 class="font-bold text-2xl mb-3 text-emerald-400">
+            Inventory Management System
+        </h3>
+
+        <p class="text-zinc-600 dark:text-zinc-400 mb-6 min-h-[120px]">
+            A full-stack inventory management system built for managing products,
+            stock levels, and inventory transactions efficiently.
+        </p>
+
+        <div class="flex gap-2 flex-wrap mb-6 min-h-[90px] content-start">
+            <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">Laravel</span>
+            <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">Tailwind CSS</span>
+            <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">MySQL</span>
         </div>
+
+        <div class="flex gap-6 text-emerald-600 font-medium mt-auto">
+            <<a href="https://github.com/Wayneeeeex/Inventory-Management-System"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="hover:underline">
+        GitHub Repository →
+        </div>
+
+    </div>
+</div>
+
+<!-- POS NetBeans -->
+<div class="min-w-[350px] max-w-[350px] bg-white dark:bg-zinc-900 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition snap-start flex flex-col">
+
+    <div class="h-64 bg-zinc-300 dark:bg-zinc-700 flex items-center justify-center">
+        <img src="{{ asset('img/POS-NETBEANS.png') }}"
+             alt="POS NetBeans"
+             class="w-full h-full object-cover">
+    </div>
+
+    <div class="p-8 flex flex-col flex-grow">
+
+        <h3 class="font-bold text-2xl mb-3 text-emerald-400">
+            Point of Sale System (1st Year Project)
+        </h3>
+
+        <p class="text-zinc-600 dark:text-zinc-400 mb-6 min-h-[120px]">
+            A simple point-of-sale application developed using Java and Apache NetBeans.
+        </p>
+
+        <div class="flex gap-2 flex-wrap mb-6 min-h-[90px] content-start">
+            <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">Java</span>
+            <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">NetBeans</span>
+        </div>
+
+        <div class="flex gap-6 text-emerald-600 font-medium mt-auto">
+             <a href="https://github.com/Wayneeeeex/PC-Shop"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="hover:underline">
+        GitHub Repository →
+        </div>
+
+    </div>
+</div>
+
+<!-- POS File Handling -->
+<div class="min-w-[350px] max-w-[350px] bg-white dark:bg-zinc-900 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition snap-start flex flex-col">
+
+    <div class="h-64 bg-zinc-300 dark:bg-zinc-700 flex items-center justify-center">
+        <img src="{{ asset('img/POS-FILEHANDLING.jpg') }}"
+             alt="POS File Handling"
+             class="w-full h-full object-cover">
+    </div>
+
+    <div class="p-8 flex flex-col flex-grow">
+
+        <h3 class="font-bold text-2xl mb-3 text-emerald-400">
+            Point of Sale System (File Handling)
+        </h3>
+
+        <p class="text-zinc-600 dark:text-zinc-400 mb-6 min-h-[120px]">
+            A Java-based POS system utilizing file handling for data storage with
+            separate Admin and User interfaces.
+        </p>
+
+        <div class="flex gap-2 flex-wrap mb-6 min-h-[90px] content-start">
+            <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">Java</span>
+            <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">File Handling</span>
+            <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">Eclipse</span>
+        </div>
+
+        <div class="flex gap-6 text-emerald-600 font-medium mt-auto">
+            <div class="text-emerald-600 font-medium mt-auto">
+    <a href="https://github.com/Wayneeeeex/PP2-LE-Main"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="hover:underline">
+        GitHub Repository →
+    </a>
+</div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Capstone Repository -->
+<div class="min-w-[350px] max-w-[350px] bg-white dark:bg-zinc-900 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition snap-start flex flex-col">
+
+    <div class="h-64 bg-zinc-300 dark:bg-zinc-700 flex items-center justify-center">
+        <img src="{{ asset('img/CAPSTONE-REPOSITORY.jpg') }}"
+             alt="Capstone Repository"
+             class="w-full h-full object-cover">
+    </div>
+
+    <div class="p-8 flex flex-col flex-grow">
+
+        <h3 class="font-bold text-2xl mb-3 text-emerald-400">
+            Capstone Research Repository
+        </h3>
+
+        <p class="text-zinc-600 dark:text-zinc-400 mb-6 min-h-[120px]">
+            A web-based repository for storing, searching, and managing capstone
+            research projects and academic documents.
+        </p>
+
+        <div class="flex gap-2 flex-wrap mb-6 min-h-[90px] content-start">
+            <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">File Handling</span>
+            <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">HTML</span>
+            <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">CSS</span>
+        </div>
+
+        <div class="flex gap-6 text-emerald-600 font-medium mt-auto">
+             <a href="https://github.com/Wayneeeeex/PP2-LE-Main"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="hover:underline">
+        GitHub Repository →
+    </a>
+        </div>
+
+    </div>
+</div>
+</div>
+        
+        
     </section>
 
     <section id="contact" class="py-24 bg-white dark:bg-zinc-900">
         <div class="max-w-2xl mx-auto px-6 text-center">
-            <h2 class="text-5xl font-bold mb-8 text-emerald-400s">Get In Touch</h2>
+            <h2 class="text-5xl font-bold mb-8 text-white">Get In Touch</h2>
             <p class="text-xl text-white-600 dark:text-zinc-400 mb-10">I'm currently open to new opportunities and collaborations.</p>
-            <a href="mailto:your@email.com" 
+            <a href="mailto:compasionchristian@gmail.com" 
                class="inline-block px-12 py-5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-lg rounded-3xl transition">
                 Say Hello ✉️
             </a>
