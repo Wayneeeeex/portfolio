@@ -254,7 +254,7 @@
         </p>
 
         <div class="flex gap-2 flex-wrap mb-6 min-h-[90px] content-start">
-            <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">File Handling</span>
+            <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">MySQL</span>
             <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">HTML</span>
             <span class="text-xs px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full">CSS</span>
         </div>
